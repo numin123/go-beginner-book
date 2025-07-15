@@ -6,7 +6,6 @@
 **ตัวอย่าง:**
 ถ้าคุณอยากเก็บคะแนนสอบของนักเรียนหลายคนไว้ในตัวแปรเดียว แล้วนำไปวนลูปแสดงผลทีละคน
 
-
 ## อาร์เรย์ (Arrays)
 เก็บข้อมูลขนาดคงที่
 ```go
@@ -23,7 +22,6 @@ Output:
 2
 3
 ```
-
 
 ## สไลซ์ (Slices)
 ขนาดยืดหยุ่น เพิ่ม/ลดได้
@@ -44,7 +42,6 @@ Output:
 4
 ```
 
-
 ## make, copy
 ```go
 s := make([]int, 3)
@@ -55,7 +52,6 @@ Output:
 ```
 [1 2 3]
 ```
-
 
 ## แผนที่ (Maps)
 เก็บข้อมูลแบบ key-value
@@ -73,7 +69,6 @@ a 1
 b 2
 ```
 
-
 ## โครงสร้าง (Structs)
 สร้างชนิดข้อมูลเอง
 ```go
@@ -88,8 +83,6 @@ Output:
 ```
 Ann 20
 ```
-
-d := Dog{Animal{"Doggy"}, "Pug"}
 
 ## การฝัง (Embedding) ใน Structs
 ```go
@@ -106,15 +99,9 @@ Output:
 Doggy Pug
 ```
 
-
 [Go by Example: Arrays](https://gobyexample.com/arrays)
 [Go by Example: Slices](https://gobyexample.com/slices)
 [Go by Example: Maps](https://gobyexample.com/maps)
 [Go by Example: Structs](https://gobyexample.com/structs)
 
 ---
-
-## LeetCode ที่แนะนำสำหรับบทนี้
-- [1. Two Sum](https://leetcode.com/problems/two-sum/) (array, map)
-- [88. Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/) (array, slice)
-- [217. Contains Duplicate](https://leetcode.com/problems/contains-duplicate/) (array, map)

@@ -6,7 +6,6 @@
 **ตัวอย่าง:**
 ถ้าคุณอยากเขียนฟังก์ชันบวกเลขสองจำนวน เช่น add(2, 3) แล้วได้ผลลัพธ์ 5
 
-
 ## ฟังก์ชัน (Functions)
 ประกาศฟังก์ชัน:
 ```go
@@ -36,7 +35,6 @@ Output:
 Hello!
 ```
 
-
 ## Multiple Return Values
 ```go
 func swap(a, b string) (string, string) {
@@ -50,7 +48,6 @@ Output:
 world hello
 ```
 
-
 ## Named Return Values
 ```go
 func calc(x int) (result int) {
@@ -63,7 +60,6 @@ Output:
 ```
 10
 ```
-
 
 ## Variadic Functions
 ```go
@@ -81,7 +77,6 @@ Output:
 10
 ```
 
-
 ## Defer, Panic, Recover
 ```go
 func main() {
@@ -95,7 +90,6 @@ Output:
 จบโปรแกรม
 ```
 
-
 ## ขอบเขตของตัวแปร (Variable Scope)
 ตัวแปรที่ประกาศในฟังก์ชันจะใช้ได้แค่ในฟังก์ชันนั้น
 ```go
@@ -105,7 +99,6 @@ func foo() {
 }
 // fmt.Println(x) // error: x undefined
 ```
-
 
 ## แพ็คเกจ (Packages)
 สร้างไฟล์ใหม่และใช้ `package` + import ได้เลย
@@ -119,15 +112,9 @@ import "./mathutil"
 fmt.Println(mathutil.Double(5))
 ```
 
-
 [Go by Example: Functions](https://gobyexample.com/functions)
 [Go by Example: Multiple Return Values](https://gobyexample.com/multiple-return-values)
 [Go by Example: Variadic Functions](https://gobyexample.com/variadic-functions)
 [Go by Example: Defer](https://gobyexample.com/defer)
 
 ---
-
-## LeetCode ที่แนะนำสำหรับบทนี้
-- [344. Reverse String](https://leetcode.com/problems/reverse-string/) (function, slice)
-- [709. To Lower Case](https://leetcode.com/problems/to-lower-case/) (function)
-- [231. Power of Two](https://leetcode.com/problems/power-of-two/) (function, return value)

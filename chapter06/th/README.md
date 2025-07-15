@@ -6,7 +6,6 @@
 **ตัวอย่าง:**
 ถ้าคุณอยากให้โปรแกรมโหลดข้อมูลจากอินเทอร์เน็ตและประมวลผลไปพร้อมกัน ไม่ต้องรอทีละขั้นตอน
 
-
 ## Goroutines
 รันฟังก์ชันพร้อมกันแบบเบาๆ
 ```go
@@ -26,8 +25,6 @@ Main thread
 Hello from goroutine
 ```
 
-x := <-ch
-
 ## Channels
 ส่งข้อมูลระหว่าง goroutine
 ```go
@@ -40,7 +37,6 @@ Output:
 ```
 1
 ```
-
 
 ## Select Statement
 เลือก channel ที่พร้อมใช้งาน
@@ -61,7 +57,6 @@ Output (อาจได้ one หรือ two):
 one
 ```
 
-
 ## Mutexes
 ล็อกข้อมูลไม่ให้แก้พร้อมกัน
 ```go
@@ -77,7 +72,6 @@ Output:
 ```
 1
 ```
-
 
 ## WaitGroup
 รอให้ goroutine ทำงานเสร็จ
@@ -104,7 +98,6 @@ goroutine 1 done
 goroutine 2 done
 ```
 
-
 [Go by Example: Goroutines](https://gobyexample.com/goroutines)
 [Go by Example: Channels](https://gobyexample.com/channels)
 [Go by Example: Select](https://gobyexample.com/select)
@@ -112,8 +105,3 @@ goroutine 2 done
 [Go by Example: WaitGroups](https://gobyexample.com/waitgroups)
 
 ---
-
-## LeetCode ที่แนะนำสำหรับบทนี้
-- [1114. Print in Order](https://leetcode.com/problems/print-in-order/) (goroutine, sync)
-- [1195. Fizz Buzz Multithreaded](https://leetcode.com/problems/fizz-buzz-multithreaded/) (goroutine, channel)
-- [1226. The Dining Philosophers](https://leetcode.com/problems/the-dining-philosophers/) (mutex)

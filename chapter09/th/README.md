@@ -52,7 +52,6 @@ Output (ตัวอย่าง):
 2 Bob
 ```
 
-
 ## การใช้ ORM (Optional)
 เช่น GORM
 ```go
@@ -73,13 +72,7 @@ Output (ตัวอย่าง):
 [{1 Ann}]
 ```
 
-
 [Go by Example: SQL](https://gobyexample.com/sql)
 [GORM Docs](https://gorm.io/docs/)
 
 ---
-
-## LeetCode ที่แนะนำสำหรับบทนี้
-- [175. Combine Two Tables](https://leetcode.com/problems/combine-two-tables/) (SQL)
-- [595. Big Countries](https://leetcode.com/problems/big-countries/) (SQL)
-- [183. Customers Who Never Order](https://leetcode.com/problems/customers-who-never-order/) (SQL)

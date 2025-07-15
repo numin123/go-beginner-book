@@ -6,7 +6,6 @@
 **ตัวอย่าง:**
 ถ้าคุณอยากรู้ว่าโค้ดที่เขียนทำงานถูกต้องหรือไม่ หรืออยากหาจุดผิดพลาดในโปรแกรม
 
-
 ## การเขียน Unit Tests
 ใช้ package `testing`
 ```go
@@ -24,7 +23,6 @@ Output (เมื่อรัน `go test`):
 PASS
 ```
 
-
 ## การเขียน Benchmark Tests
 ```go
 func BenchmarkAdd(b *testing.B) {
@@ -38,7 +36,6 @@ Output (เมื่อรัน `go test -bench .`):
 BenchmarkAdd-8   1000000000   0.25 ns/op
 ```
 
-
 ## การดีบัก
 ใช้ Delve (dlv)
 - ติดตั้ง: `go install github.com/go-delve/delve/cmd/dlv@latest`
@@ -50,13 +47,7 @@ dlv debug
 (dlv) continue
 ```
 
-
 [Go by Example: Testing](https://gobyexample.com/testing-and-benchmarking)
 [Delve Debugger](https://github.com/go-delve/delve)
 
 ---
-
-## LeetCode ที่แนะนำสำหรับบทนี้
-- [21. Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/) (test, struct)
-- [141. Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/) (test, pointer)
-- [704. Binary Search](https://leetcode.com/problems/binary-search/) (test, function)

@@ -6,7 +6,6 @@
 **ตัวอย่าง:**
 ถ้าคุณอยากแยกโค้ดเป็นหลายไฟล์ หลายโฟลเดอร์ หรืออยากนำโปรแกรมไป deploy บน server จริง
 
-
 ## การจัดการ Dependencies (Go Modules)
 ```go
 go mod init myproject
@@ -17,7 +16,6 @@ Output:
 go: creating new go.mod: module myproject
 go: added github.com/some/package v1.2.3
 ```
-
 
 ## การจัดโครงสร้างโปรเจกต์ขนาดใหญ่
 - แยกโฟลเดอร์ตามฟีเจอร์ เช่น /user, /order
@@ -32,7 +30,6 @@ myproject/
     handler.go
 ```
 
-
 ## การสร้าง Docker Image
 ```dockerfile
 FROM golang:1.22
@@ -45,7 +42,6 @@ Output:
 ```
 Successfully built <image-id>
 ```
-
 
 ## การนำ Go Application ขึ้น Deployment
 - ใช้ Docker, Kubernetes, หรือ Cloud (GCP, AWS, Azure)
@@ -66,13 +62,7 @@ spec:
         - containerPort: 8080
 ```
 
-
 [Go Modules](https://blog.golang.org/using-go-modules)
 [Deploy Go with Docker](https://docs.docker.com/language/golang/build-images/)
 
 ---
-
-## LeetCode ที่แนะนำสำหรับบทนี้
-- [70. Climbing Stairs](https://leetcode.com/problems/climbing-stairs/) (function, structuring code)
-- [198. House Robber](https://leetcode.com/problems/house-robber/) (function, module)
-- [53. Maximum Subarray](https://leetcode.com/problems/maximum-subarray/) (function)

@@ -24,7 +24,6 @@ Go (Golang) คือภาษาโปรแกรมที่ Google พัฒ
 
 [คู่มือการติดตั้ง Go ภาษาไทย](https://devahoy.com/posts/go-install/)
 
-
 ## โครงสร้างโปรเจกต์ Go เบื้องต้น
 - ไฟล์หลักชื่อ `main.go`
 - ใช้ package `main` และฟังก์ชัน `main()`
@@ -60,7 +59,6 @@ Output:
 สวัสดี John
 ```
 
-
 ## ไวยากรณ์พื้นฐาน
 - ตัวแปร: `var x int = 10`
 - ชนิดข้อมูล: int, float64, string, bool
@@ -77,7 +75,6 @@ Output:
 ```
 20 Ann 3.14
 ```
-
 
 ## การดำเนินการ (Operators)
 - +, -, *, /, % (คณิตศาสตร์)
@@ -100,7 +97,6 @@ true
 true
 ```
 
-
 ## การรับและแสดงผล (Input/Output)
 - แสดงผล: `fmt.Println("ข้อความ")`
 - รับค่า: ดูตัวอย่างด้านบน
@@ -115,12 +111,6 @@ Output:
 คะแนน: 95.5
 ```
 
-
 [Go by Example: Input/Output](https://gobyexample.com/hello-world)
 
 ---
-
-## LeetCode ที่แนะนำสำหรับบทนี้
-- [1108. Defanging an IP Address](https://leetcode.com/problems/defanging-an-ip-address/) (string, basic output)
-- [771. Jewels and Stones](https://leetcode.com/problems/jewels-and-stones/) (string, count)
-- [1672. Richest Customer Wealth](https://leetcode.com/problems/richest-customer-wealth/) (array, for loop)

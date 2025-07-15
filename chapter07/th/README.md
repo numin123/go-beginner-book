@@ -6,7 +6,6 @@
 **ตัวอย่าง:**
 ถ้าคุณอยากให้โปรแกรมบันทึกข้อความลงไฟล์ หรืออ่านไฟล์ข้อความมาแสดงผลบนหน้าจอ
 
-
 ## การอ่านและเขียนไฟล์ (Reading and Writing Files)
 ```go
 import (
@@ -32,7 +31,6 @@ Output:
 hello world
 ```
 
-
 ## บัฟเฟอร์ I/O (Buffered I/O)
 ```go
 import (
@@ -50,7 +48,6 @@ Output:
 ```
 hello world
 ```
-
 
 ## การทำงานกับ CSV/JSON/XML
 ```go
@@ -74,14 +71,8 @@ a,b
 {"a":1}
 ```
 
-
 [Go by Example: Reading Files](https://gobyexample.com/reading-files)
 [Go by Example: Writing Files](https://gobyexample.com/writing-files)
 [Go by Example: JSON](https://gobyexample.com/json)
 
 ---
-
-## LeetCode ที่แนะนำสำหรับบทนี้
-- [709. To Lower Case](https://leetcode.com/problems/to-lower-case/) (string, file I/O)
-- [131. Palindrome Partitioning](https://leetcode.com/problems/palindrome-partitioning/) (string, slice)
-- [1021. Remove Outermost Parentheses](https://leetcode.com/problems/remove-outermost-parentheses/) (string, stack)

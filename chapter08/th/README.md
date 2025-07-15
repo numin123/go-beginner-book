@@ -6,7 +6,6 @@
 **ตัวอย่าง:**
 ถ้าคุณอยากให้โปรแกรมดึงข้อมูลจากเว็บไซต์ หรือสร้างเว็บเซิร์ฟเวอร์เล็กๆ ที่ตอบข้อความ "Hello, world!" เมื่อมีคนเข้ามา
 
-
 ## HTTP Clients
 ส่ง HTTP GET/POST
 ```go
@@ -25,7 +24,6 @@ Output:
 <!doctype html><html>... (ตัวอย่าง output)
 ```
 
-
 ## HTTP Servers
 สร้างเว็บเซิร์ฟเวอร์ง่ายๆ
 ```go
@@ -41,7 +39,6 @@ Output (เมื่อเปิด http://localhost:8080):
 ```
 Hello, world!
 ```
-
 
 ## RESTful APIs
 แนวคิด: รับ/ส่งข้อมูลแบบ JSON ผ่าน HTTP
@@ -59,13 +56,7 @@ http.HandleFunc("/user", func(w http.ResponseWriter, r *http.Request) {
 })
 ```
 
-
 [Go by Example: HTTP Client](https://gobyexample.com/http-client)
 [Go by Example: HTTP Server](https://gobyexample.com/http-server)
 
 ---
-
-## LeetCode ที่แนะนำสำหรับบทนี้
-- [771. Jewels and Stones](https://leetcode.com/problems/jewels-and-stones/) (string, input/output)
-- [20. Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) (stack, string)
-- [387. First Unique Character in a String](https://leetcode.com/problems/first-unique-character-in-a-string/) (map, string)
