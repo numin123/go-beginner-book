@@ -1,0 +1,56 @@
+# บทที่ 10: การทดสอบและการดีบัก (Testing & Debugging)
+
+
+## การเขียน Unit Tests
+ใช้ package `testing`
+```go
+import "testing"
+func add(a, b int) int { return a + b }
+func TestAdd(t *testing.T) {
+    got := add(2, 3)
+    if got != 5 {
+        t.Errorf("want 5 got %d", got)
+    }
+}
+```
+Output (เมื่อรัน `go test`):
+```
+PASS
+```
+
+
+## การเขียน Benchmark Tests
+```go
+func BenchmarkAdd(b *testing.B) {
+    for i := 0; i < b.N; i++ {
+        add(2, 3)
+    }
+}
+```
+Output (เมื่อรัน `go test -bench .`):
+```
+BenchmarkAdd-8   1000000000   0.25 ns/op
+```
+
+
+## การดีบัก
+ใช้ Delve (dlv)
+- ติดตั้ง: `go install github.com/go-delve/delve/cmd/dlv@latest`
+- ใช้: `dlv debug`
+ตัวอย่างการตั้ง breakpoint:
+```
+dlv debug
+(dlv) break main.go:5
+(dlv) continue
+```
+
+
+[Go by Example: Testing](https://gobyexample.com/testing-and-benchmarking)
+[Delve Debugger](https://github.com/go-delve/delve)
+
+---
+
+## LeetCode ที่แนะนำสำหรับบทนี้
+- [21. Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/) (test, struct)
+- [141. Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/) (test, pointer)
+- [704. Binary Search](https://leetcode.com/problems/binary-search/) (test, function)
